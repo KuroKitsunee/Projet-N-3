@@ -1,0 +1,438 @@
+/* DOCUMENT INFORMATION
+    - Document : Ebène
+    - Version : 1.0.0
+    - Author : Maxime
+*/
+
+/* COLORS
+    - Default
+    - h1
+    - h2
+    - h3
+    - button
+    - button:hover
+    - icon          rgb(0, 204, 0);
+*/
+
+/* FONTS
+    - Default : Be Vietnam Pro
+    - Subtitle
+*/
+
+/* CSS DIRECTORY
+    1. = GLOBAL
+    2. = HEADER
+    3. = PRODUITS
+*/
+
+/* GLOBAL
+--------------------------------------------*/
+
+html {
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Be Vietnam Pro', 'Arial', sans-serif;
+    color: black;
+    text-transform: uppercase;
+}
+
+h1 {
+    letter-spacing: -1px;
+    font-weight: 400;
+    word-spacing: 8px;
+}
+
+h2 {
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(0, 204, 0);
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 163%;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER
+--------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgb(230, 230, 230,0.4),
+                                      rgb(0, 153, 0,0.3)
+                                      ), 
+                                        url(../images/Foret.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+}
+
+.logo_ygg {
+    position: absolute;
+    width: 10%;
+    right: 65%;
+    top: 0%
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full {
+    background-color: azure;
+    color: black;
+    margin-right: 15px;
+}
+
+.btn-ghost {
+    border: 1px solid white;
+    color: black;
+}
+
+.btn-full:hover {
+    background-color: black;
+    color: rgb(0, 204, 0);
+}
+
+.btn-ghost:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: rgb(0, 204, 0);
+}
+
+/* PRODUITS
+--------------------------------------------*/
+.produits-plus {
+    margin: 20px 0;
+}
+
+.produits-plus:hover .produits-icon {
+    color: black;
+    transform: translateX(20px);
+}
+
+.produits-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.produits-icon {
+    font-size: 34px;
+    color: rgb(0, 204, 0);
+    transition: all 1s;
+}
+
+/* FAMILLE BOIS
+--------------------------------------------*/
+
+.famille-bois {
+    background-color: rgb(193, 231, 193);
+}
+
+.famille-details {
+    background-color: rgba(0, 128, 0, 0.493);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(109, 107, 107, 0.801);
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.famille-details h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* GALLERIES PHOTOS
+--------------------------------------------*/
+
+.galeries-img {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 400px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(109, 107, 107, 0.801);
+}
+
+.galeries-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+
+.galeries-titre h4 {
+    background-color: rgba(31, 30, 30, 0.884);
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+}
+
+/* AVIS CLIENTS
+--------------------------------------------*/
+
+.clients {
+    background-image: url(../images/Avis_clients/Foret-client.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(31, 30, 30, 0.295);
+    padding-top: 1%;
+}
+
+.clients h2:after {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 400%;
+    
+}
+
+.clients blockquote {
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(31, 30, 30, 0.295);
+    padding-top: 1%;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* COMMANDE BOIS
+--------------------------------------------*/
+
+.offres {
+    box-shadow: 0 0 5px rgba(31, 30, 30, 0.295);
+    border-radius: 10px;
+}
+
+.amar {
+    color: rgb(129, 67, 102);
+    font-weight: 400;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid rgb(0, 204, 0);
+}
+
+.offres-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.offres-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.ama {
+    color: rgb(129, 67, 102);
+}
+
+.commande {
+    text-align: center;
+}
+
+.btn-commande-ama {
+    background-color: rgb(129, 67, 102);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn-commande-bou {
+    background-color: rgb(222, 161, 86);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.boul {
+    color: rgb(222, 161, 86);
+    font-weight: 400;
+}
+.bou {
+    background-color: rgb(222, 161, 86);
+}
+
+.eben {
+    color: rgb(85, 80, 74);
+    font-weight: 400;
+}
+
+.ebe {
+    color: rgb(85, 80, 74);
+}
+
+.btn-commande-ebe {
+    background-color: rgb(85, 80, 74);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.fer {
+    color: rgb(159, 83, 28);
+    font-weight: 400;
+}
+
+.fe {
+    color: rgb(159, 83, 28);
+}
+
+.btn-commande-fer {
+    background-color: rgb(159, 83, 28);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.gidg {
+    color: rgb(123, 68, 48);
+    font-weight: 400;
+}
+
+.gid {
+    color: rgb(123, 68, 48);
+}
+
+.btn-commande-gidg {
+    background-color: rgb(123, 68, 48);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hetr {
+    color: rgb(213, 177, 124);
+    font-weight: 400;
+}
+
+.het {
+    color: rgb(213, 177, 124);
+}
+
+.btn-commande-hetr {
+    background-color: rgb(213, 177, 124);
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* CONTACT
+--------------------------------------------*/
+.phone, .adress {
+    margin-bottom: 20px;
+}
+.contact-form {
+    margin-bottom: 30px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.btn-contact {
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-contact:hover {
+    background-color: black;
+    color: rgb(0, 204, 0);
+}
+
+/* FOOTER
+--------------------------------------------*/
+
+footer {
+    background-color: rgba(0, 0, 0, 0.774);
+    color: rgb(0, 204, 0);
+    height: 60px;
+    padding: 20px 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright a {
+    color: rgb(0, 204, 0);
+}
+
+/* BARRE DE NAVIGATION
+--------------------------------------------*/
+
+.nav-pills {
+    position: fixed;
+    width: 100%;
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.nav-pills a {
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: 900;
+    color: black;
+}
